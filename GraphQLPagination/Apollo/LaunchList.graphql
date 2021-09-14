@@ -1,0 +1,31 @@
+query LaunchList {
+  launches {
+    hasMore
+    launches {
+      id
+      site
+    }
+  }
+}
+
+
+query LaunchListBy($pageSize: Int! $lastCursor: String!) {
+  launches(pageSize: $pageSize after: $lastCursor){
+    hasMore
+    cursor
+    launches{
+      id
+      site
+      mission{
+        name
+        missionPatch
+      }
+      rocket {
+        id
+        name
+        type
+      }
+      isBooked
+    }
+  }
+}

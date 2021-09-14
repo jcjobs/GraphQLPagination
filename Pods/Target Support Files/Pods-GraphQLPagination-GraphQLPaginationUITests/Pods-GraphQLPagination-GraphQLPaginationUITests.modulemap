@@ -1,0 +1,6 @@
+framework module Pods_GraphQLPagination_GraphQLPaginationUITests {
+  umbrella header "Pods-GraphQLPagination-GraphQLPaginationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
