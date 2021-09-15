@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
-    private let spinner = UIActivityIndicatorView(style: .gray)
+    private let spinner = UIActivityIndicatorView(style: .large)
     private let refreshControl = UIRefreshControl()
 
     private let launchListVM: LaunchListVMProtocol = LaunchListVM(pageSize: 5)
