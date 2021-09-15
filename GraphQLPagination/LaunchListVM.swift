@@ -22,7 +22,7 @@ class LaunchListVM: LaunchListVMProtocol {
         Network.shared.apollo.fetch(query: LaunchListByQuery(pageSize: page, lastCursor: lastCursor ?? "")) { result in
             switch result {
             case .success(let graphQLResult):
-                print(graphQLResult)
+                debugPrint(graphQLResult)
                 
                 guard  let launchesResult = graphQLResult.data?.launches else {
                     completionHandler(.failure(.noData))
@@ -31,7 +31,7 @@ class LaunchListVM: LaunchListVMProtocol {
                 completionHandler(.success(launchesResult))
                 
             case .failure(let error):
-                print(error)
+                debugPrint(error)
                 completionHandler(.failure(.custom(errorResult: error)))
             }
         }

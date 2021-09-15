@@ -22,6 +22,7 @@
 		30C18C3E26F13CBC00DA78B7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C18C3D26F13CBC00DA78B7 /* Network.swift */; };
 		30C18C4026F13CEA00DA78B7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C18C3F26F13CEA00DA78B7 /* Error.swift */; };
 		30C18C4326F1409100DA78B7 /* ApolloAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C18C4226F1409100DA78B7 /* ApolloAPI.swift */; };
+		30C18C4526F2777A00DA78B7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30C18C4426F2777A00DA78B7 /* README.md */; };
 		CC0DA90E94F8043F1FEA00AA /* Pods_GraphQLPagination_GraphQLPaginationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB50202DB392ACF2492BE91 /* Pods_GraphQLPagination_GraphQLPaginationUITests.framework */; };
 		DB4E84F63717EBD87E685AC1 /* Pods_GraphQLPaginationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913465FE1689ACB296D44750 /* Pods_GraphQLPaginationTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		30C18C3D26F13CBC00DA78B7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		30C18C3F26F13CEA00DA78B7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		30C18C4226F1409100DA78B7 /* ApolloAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloAPI.swift; sourceTree = "<group>"; };
+		30C18C4426F2777A00DA78B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		361656966493A1D9DA194166 /* Pods-GraphQLPagination-GraphQLPaginationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLPagination-GraphQLPaginationUITests.debug.xcconfig"; path = "Target Support Files/Pods-GraphQLPagination-GraphQLPaginationUITests/Pods-GraphQLPagination-GraphQLPaginationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3646EB75EAA4846460AC162C /* Pods-GraphQLPagination.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLPagination.debug.xcconfig"; path = "Target Support Files/Pods-GraphQLPagination/Pods-GraphQLPagination.debug.xcconfig"; sourceTree = "<group>"; };
 		5C24EADDD59E429B35836C5C /* Pods-GraphQLPagination.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLPagination.release.xcconfig"; path = "Target Support Files/Pods-GraphQLPagination/Pods-GraphQLPagination.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		30C18BF526F12ED900DA78B7 /* GraphQLPagination */ = {
 			isa = PBXGroup;
 			children = (
+				30C18C4426F2777A00DA78B7 /* README.md */,
 				30C18C4126F1401600DA78B7 /* Apollo */,
 				30C18BF626F12ED900DA78B7 /* AppDelegate.swift */,
 				30C18BF826F12ED900DA78B7 /* SceneDelegate.swift */,
@@ -303,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C18C4526F2777A00DA78B7 /* README.md in Resources */,
 				30C18C3726F13AF700DA78B7 /* schema.json in Resources */,
 				30C18C0326F12EDA00DA78B7 /* LaunchScreen.storyboard in Resources */,
 				30C18C0026F12EDA00DA78B7 /* Assets.xcassets in Resources */,
@@ -639,6 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A7QK6XB9U;
 				INFOPLIST_FILE = GraphQLPagination/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A7QK6XB9U;
 				INFOPLIST_FILE = GraphQLPagination/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -44,21 +44,21 @@ class ViewController: UIViewController {
         launchListVM.getAll(for: lastCursor) { [weak self] result in
             switch result {
             case .success(let graphQLResult):
-                print(graphQLResult)
+                debugPrint(graphQLResult)
                 
                 self?.launches.append(contentsOf: graphQLResult.launches.compactMap({ $0 }) )
                 
                 if graphQLResult.hasMore {
                     self?.loadData(for: graphQLResult.cursor)
                 } else{
-                    print("No more data... total items: \(self?.launches.count ?? 0)")
+                    debugPrint("No more data... total items: \(self?.launches.count ?? 0)")
                     self?.tableView.reloadData()
                     self?.spinner.stopAnimating()
                     self?.refreshControl.endRefreshing()
                 }
 
             case .failure(let error):
-                print(error)
+                debugPrint(error)
                 self?.launches.removeAll()
                 self?.tableView.reloadData()
                 self?.spinner.stopAnimating()

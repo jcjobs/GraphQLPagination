@@ -16,7 +16,7 @@ extension FetchError: LocalizedError {
     var localizedDescription: String {
         switch self {
         case .noData:
-            return "noData..."
+            return "No data..."
             
         case .custom(let errorResult):
             return errorResult.localizedDescription
